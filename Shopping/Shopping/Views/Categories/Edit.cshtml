@@ -1,26 +1,25 @@
-﻿@model Shopping.Data.Entities.Country
+﻿@model Shopping.Data.Entities.Category
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Edit";
 }
 
-<h1>Crear Nuevo Páis</h1>
-
-<h4>Países</h4>
+<h1>Editar Categoría</h1>
 <hr />
 <div class="row">
-    <div class="col-md-12">
-        <form asp-action="Create">
+    <div class="col-md-4">
+        <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="States"/>
-            <partial name="_Country" />
+            <input type="hidden" asp-for="Id" />
+            <partial name="_Category" />
             <div class="form-group mt-2">
-                <input type="submit" value="Crear" class="btn btn-outline-success" />
+                <input type="submit" value="Guardar" class="btn btn-outline-success" />
                 <a asp-action="Index" class="btn btn-outline-primary">Volver</a>
             </div>
         </form>
     </div>
 </div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
