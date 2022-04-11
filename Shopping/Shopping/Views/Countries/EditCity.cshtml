@@ -1,20 +1,20 @@
-﻿@model Shopping.Models.StateViewModel
+﻿@model Shopping.Models.CityViewModel
 
 @{
-    ViewData["Title"] = "EditState";
+    ViewData["Title"] = "EditCity";
 }
 
-<h1>Editar País</h1>
+<h1>Editar Ciudad</h1>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="EditState">
+        <form asp-action="EditCity">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="CountryId"/>
-            <partial name="_State" />
+            <input type="hidden" asp-for="StateId"/>
+            <partial name="_City" />
             <div class="form-group mt-2">
                 <input type="submit" value="Guardar" class="btn btn-outline-success" />
-                <a asp-action="Details" asp-route-id="@Model?.CountryId" class="btn btn-outline-primary">Volver</a>
+                <a asp-action="DetailsState" asp-route-id="@Model?.StateId" class="btn btn-outline-primary">Volver</a>
             </div>
         </form>
     </div>
