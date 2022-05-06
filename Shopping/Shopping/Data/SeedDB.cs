@@ -22,7 +22,7 @@ namespace Shopping.Data
             await CheckCountriesAsync();
             await CheckRolesAsync();
             await CheckUserAsync("1122814141", "Leiner", "Solano", "ingleiner@yopmail.com", "304 356 0784", "Cra 22 # 24-14", UserType.Admin);
-            await CheckUserAsync("1066302336", "Mariana", "Solano", "mariana@yopmail.com", "304 356 0784", "Cra 22 # 24-14", UserType.User);
+          //  await CheckUserAsync("1066302336", "Mariana", "Solano", "mariana@yopmail.com", "304 356 0784", "Cra 22 # 24-14", UserType.User);
 
         }
 
